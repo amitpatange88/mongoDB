@@ -1,4 +1,4 @@
-<img src="https://cdn.iconverticons.com/files/png/4eae13c7686cb54d_256x256.png"><h1>MongoDB</h1><br>
+<img src="https://cdn.iconverticons.com/files/png/4eae13c7686cb54d_256x256.png" style="height: 100px;"><h1>MongoDB</h1><br>
 
 <br>
 //set params

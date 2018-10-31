@@ -8,7 +8,10 @@ using MongoDB.Driver;
 
 namespace MongoDB
 {
-    public class MongoDB : IDisposable
+    /// <summary>
+    /// MongoDB runs on Native driver portNo 27017.
+    /// </summary>
+    public class MongoDB
     {
         private const string _ConnectionString = "mongodb://localhost:27017";
         private const string _DatabaseName = "mycustomers";
@@ -16,10 +19,10 @@ namespace MongoDB
 
         public MongoDB()
         {
-            _db = MongoDBConnect();
+            _db = this.MongoDBConnect();
         }
 
-        public void Dispose()
+        ~MongoDB()
         {
             //close the connection if required.
         }
@@ -39,7 +42,7 @@ namespace MongoDB
         /// <summary>
         /// InsertOneAsync call.
         /// </summary>
-        public void InsertOneAsync()
+        public async void InsertOneAsync()
         {
             
             var coll = _db.GetCollection<BsonDocument>("customers");
@@ -49,7 +52,7 @@ namespace MongoDB
                 {"Ladt_name", "Koll"},
             };
 
-            coll.InsertOneAsync(doc);
+            await coll.InsertOneAsync(doc);
         }
     }
 }

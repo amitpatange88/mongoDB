@@ -1,15 +1,17 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYY4tvPtflf1l9JJF2cVc7jlIYdbZFKQyK1S4P_jcQxbZVwFs">
 
 <br>
-//set params
+<b>Below are the few common commands and parameters to set : </b><br>
+
+<b>//set params</b>
 mongod --directoryperdb --dbpath C:\mongoDB\data\db --logpath C:\mongoDB\log\mongo.log  --logappend  --install
 
-//to start mongoDB service.
+<b>//to start mongoDB service.</b>
 net start MongoDB
 
 mongo
 
-//Few other cmds
+<b>//Few other cmds</b>
 1. show dbs
 2. db
 3. use mycustomers
@@ -20,6 +22,7 @@ pwd:"12345",
 roles:["readWrite", "dbAdmin"]
 });
 
+<b>//create collection.</b>
 db.createCollection('customers');
 
 show collections
@@ -35,25 +38,25 @@ db.customers.update({first_name:"John"}, {first_name:"John", last_name:"Doe", ge
 
 db.customers.update({first_name:"Steven"}, {$set:{gender:"male"}});
 
-//Only add/set the new fields.
+<b>//Only add/set the new fields.</b>
 db.customers.update({first_name:"Steven"}, {$set:{age:45}});
 
-//Increment the fields by.
+<b>//Increment the fields by.</b>
 db.customers.update({first_name:"Steven"}, {$inc:{age:5}});
 
-//Remove the fields.
+<b>//Remove the fields.</b>
 db.customers.update({first_name:"Steven"},{$unset:age:1}});
 
-//upsert : if not found then insert
+<b>//upsert : if not found then insert</b>
 db.customers.update({first_name:"Mary"}, {first_name:"Mary", last_name:"Kom"}, {upsert:true});
 
-//rename or alter the column
+<b>//rename or alter the column</b>
 db.customers.update({first_name:"Steven", {$rename:{"gender":"sex"}}});
 
-//Remove the records.
+<b>//Remove the records.</b>
 db.customers.remove({first_name:"Steven"});
 
-//Remove the only one record.
+<b>//Remove the only one record.</b>
 db.customers.remove({first_name:"Steven"}, {justOne:true});
 
 

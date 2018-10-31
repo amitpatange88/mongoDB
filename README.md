@@ -1,4 +1,4 @@
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYY4tvPtflf1l9JJF2cVc7jlIYdbZFKQyK1S4P_jcQxbZVwFs"><h1>MongoDB</h1><br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYY4tvPtflf1l9JJF2cVc7jlIYdbZFKQyK1S4P_jcQxbZVwFs">
 
 <br>
 //set params
@@ -16,11 +16,11 @@ mongo
 
 db.createUser({
 user:"amit",
-pwd:"1234",
-roles:["readwrite", "dbadmin"]
+pwd:"12345",
+roles:["readWrite", "dbAdmin"]
 });
 
-db.createcollection('customers');
+db.createCollection('customers');
 
 show collections
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MDB = MongoDB;
 
 namespace Frontier
 {
@@ -10,6 +11,9 @@ namespace Frontier
     {
         static void Main(string[] args)
         {
+            MDB.MongoDB mdb = new MDB.MongoDB();
+            mdb.InsertOneAsync();
+            Console.ReadKey();
         }
     }
 }

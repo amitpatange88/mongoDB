@@ -1,0 +1,15 @@
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\MongoDB.dll
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\MongoDB.pdb
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\DnsClient.dll
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\MongoDB.Bson.dll
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\MongoDB.Driver.Core.dll
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\MongoDB.Driver.dll
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\System.Buffers.dll
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\DnsClient.xml
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\MongoDB.Bson.xml
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\MongoDB.Driver.xml
+C:\E\VS-Programs\MongoDBSystem\MongoDB\bin\Debug\MongoDB.Driver.Core.xml
+C:\E\VS-Programs\MongoDBSystem\MongoDB\obj\Debug\MongoDB.csprojResolveAssemblyReference.cache
+C:\E\VS-Programs\MongoDBSystem\MongoDB\obj\Debug\MongoDB.dll
+C:\E\VS-Programs\MongoDBSystem\MongoDB\obj\Debug\MongoDB.pdb

@@ -1,0 +1,6 @@
+C:\E\VS-Programs\MongoDBSystem\Frontier\bin\Debug\Frontier.exe.config
+C:\E\VS-Programs\MongoDBSystem\Frontier\bin\Debug\Frontier.exe
+C:\E\VS-Programs\MongoDBSystem\Frontier\bin\Debug\Frontier.pdb
+C:\E\VS-Programs\MongoDBSystem\Frontier\obj\Debug\Frontier.csprojResolveAssemblyReference.cache
+C:\E\VS-Programs\MongoDBSystem\Frontier\obj\Debug\Frontier.exe
+C:\E\VS-Programs\MongoDBSystem\Frontier\obj\Debug\Frontier.pdb

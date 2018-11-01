@@ -12,7 +12,8 @@ namespace Frontier
         static void Main(string[] args)
         {
             MDB.MongoDB mdb = new MDB.MongoDB();
-            mdb.InsertOneAsync();
+
+            mdb.InsertInCollection("customers");
             Console.ReadKey();
         }
     }

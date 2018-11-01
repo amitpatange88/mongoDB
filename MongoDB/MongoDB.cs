@@ -31,7 +31,7 @@ namespace MongoDB
         /// Create connection for database.
         /// </summary>
         /// <returns></returns>
-        private IMongoDatabase MongoDBConnect()
+        internal IMongoDatabase MongoDBConnect()
         {
             var client = new MongoClient(_ConnectionString);
             var db = client.GetDatabase(_DatabaseName);
@@ -42,17 +42,27 @@ namespace MongoDB
         /// <summary>
         /// InsertOneAsync call.
         /// </summary>
-        public async void InsertOneAsync()
+        public async void InsertInCollection(string collectionName)
         {
             
-            var coll = _db.GetCollection<BsonDocument>("customers");
+            var coll = _db.GetCollection<BsonDocument>(collectionName);
             var doc = new BsonDocument
             {
-                {"first_name", "alex"},
-                {"Ladt_name", "Koll"},
+                {"first_name", "Mathieve"},
+                {"Ladt_name", "Farrel"},
             };
 
             await coll.InsertOneAsync(doc);
         }
+
+
+        /// <summary>
+        /// create a mongodb collection here.
+        /// </summary>
+        /// <param name="collectionName"></param>
+        public void CreateCollectionOnMongo(string collectionName)
+        {
+            _db.CreateCollection(collectionName);
+        }   
     }
 }

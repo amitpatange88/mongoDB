@@ -48,8 +48,9 @@ namespace MongoDB
             var coll = _db.GetCollection<BsonDocument>(collectionName);
             var doc = new BsonDocument
             {
-                {"first_name", "Mathieve"},
-                {"Ladt_name", "Farrel"},
+                {"First_name", "John"},
+                {"Last_name", "Keive"},
+                {"Gender", "Male" }
             };
 
             await coll.InsertOneAsync(doc);

@@ -13,7 +13,8 @@ namespace Frontier
         {
             MDB.MongoDB mdb = new MDB.MongoDB();
 
-            mdb.InsertInCollection("customers");
+            mdb.CreateCollectionOnMongo("clients");
+            mdb.InsertInCollection("clients");
             Console.ReadKey();
         }
     }

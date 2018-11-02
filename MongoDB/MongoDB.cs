@@ -46,6 +46,8 @@ namespace MongoDB
         {
             
             var coll = _db.GetCollection<BsonDocument>(collectionName);
+
+            //remove this hard coded data in future.
             var doc = new BsonDocument
             {
                 {"First_name", "John"},

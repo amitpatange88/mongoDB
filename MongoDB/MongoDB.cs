@@ -11,7 +11,7 @@ namespace MongoDB
     /// <summary>
     /// MongoDB runs on Native driver portNo 27017.
     /// </summary>
-    public class MongoDB
+    public class MongoDB : IMongoDB
     {
         private const string _ConnectionString = "mongodb://localhost:27017";
         private const string _DatabaseName = "mycustomers";
@@ -63,9 +63,18 @@ namespace MongoDB
         /// create a mongodb collection here.
         /// </summary>
         /// <param name="collectionName"></param>
-        public void CreateCollectionOnMongo(string collectionName)
+        public void CreateCollection(string collectionName)
         {
             _db.CreateCollection(collectionName);
         }   
+
+        /// <summary>
+        /// Drop Collection On Mongo
+        /// </summary>
+        /// <param name="collectionName"></param>
+        public void DropCollection(string collectionName)
+        {
+            _db.DropCollection(collectionName);
+        }
     }
 }

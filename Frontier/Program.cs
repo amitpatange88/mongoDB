@@ -11,9 +11,9 @@ namespace Frontier
     {
         static void Main(string[] args)
         {
-            MDB.MongoDB mdb = new MDB.MongoDB();
-
-            mdb.CreateCollectionOnMongo("clients");
+            MDB.IMongoDB mdb = new MDB.MongoDB();
+            
+            mdb.CreateCollection("clients");
             mdb.InsertInCollection("clients");
             Console.ReadKey();
         }

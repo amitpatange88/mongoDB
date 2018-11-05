@@ -76,5 +76,10 @@ namespace MongoDB
         {
             _db.DropCollection(collectionName);
         }
+
+        public IAsyncCursor<BsonDocument> ListCollection()
+        {
+            return _db.ListCollections();
+        }
     }
 }
